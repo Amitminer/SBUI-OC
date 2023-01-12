@@ -1,0 +1,19 @@
+---
+name: sbui
+version: 1.0.0 #Isdev true
+main: sbui\Main
+api: 4.12.8
+author: AmitxD
+description: Skyblock Menu plugin for SkyBlocksPM
+website: https://github.com/Amitminer888/SBUI
+softdepend: ["SkyBlocksPM"]
+commands:
+  sbui:
+    description: skyblock menu
+    usage: "/sbui"
+    permission: sbui.command.sbui
+permissions:
+  sbui.command.sbui:
+    description: "Allows the user to run the sbui command"
+    default: true
+...
