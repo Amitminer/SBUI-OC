@@ -22,8 +22,6 @@ use room17\SkyBlock\session\SessionLocator;
 class Main extends PluginBase implements Listener {
 
     private string $pluginVersion;
-    private bool $keepInventory = true;
-    private bool $keepXp = true;
 
     public function onEnable() : void {
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
@@ -39,6 +37,8 @@ class Main extends PluginBase implements Listener {
 
     public function onCommand(CommandSender $sender, Command $command, string $label, array $args): bool {
         switch ($command->getName()) {
+            case "skyblockui":
+            case "isui":
             case "sbui":
             if ($sender instanceof Player) {
                 $playerSession = SessionLocator::getSession($sender);
