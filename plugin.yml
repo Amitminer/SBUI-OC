@@ -1,6 +1,6 @@
 ---
 name: sbui
-version: 1.0.0 #Isdev false
+version: 2.0.0 #Isdev false
 main: sbui\Main
 api: 4.12.8
 author: AmitxD
@@ -12,6 +12,9 @@ commands:
     description: skyblock menu
     usage: "/sbui"
     permission: sbui.command.sbui
+    aliases:
+      - skyblockui
+      - isui
 permissions:
   sbui.command.sbui:
     description: "Allows the user to run the sbui command"
