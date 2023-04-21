@@ -1,6 +1,6 @@
 ---
 name: sbui
-version: 1.0.0 #Isdev true
+version: 1.0.0 #Isdev false
 main: sbui\Main
 api: 4.12.8
 author: AmitxD
